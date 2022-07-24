@@ -17,7 +17,7 @@ export default function Logo({ className = "" }: Props) {
     >
       <g
         transform="translate(0.000000,421.000000) scale(0.100000,-0.100000)"
-        fill="#000000"
+        fill="#bfd1d1"
         stroke="none"
       >
         <path

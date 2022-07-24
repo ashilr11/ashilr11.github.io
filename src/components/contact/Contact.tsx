@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Contact.module.css";
 import emailjs from "@emailjs/browser";
+import Logo from "../../assets/svg/Logo";
 
 const Contact = () => {
   const form = React.useRef() as any;
@@ -43,25 +44,30 @@ const Contact = () => {
 
         <div className={styles.info}>
           <div className={styles.leftColumn}>
-            <a
-              className={styles.links}
-              href="https://www.linkedin.com/in/ashil-ramjee"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Linkedin
-            </a>
-            <a
-              className={styles.links}
-              href="https://github.com/ashilramjee"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>
-            <a className={styles.links} href="mailto:ashilr11@gmail.com">
-              Email Me
-            </a>
+            <div>
+              <Logo className={styles.logo} />
+            </div>
+            <div className={styles.linksContainer}>
+              <a
+                className={styles.links}
+                href="https://www.linkedin.com/in/ashil-ramjee"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Linkedin
+              </a>
+              <a
+                className={styles.links}
+                href="https://github.com/ashilramjee"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github
+              </a>
+              <a className={styles.links} href="mailto:ashilr11@gmail.com">
+                Email Me
+              </a>
+            </div>
           </div>
           <div className={styles.rightColumn}>
             <form ref={form} onSubmit={onSubmit}>

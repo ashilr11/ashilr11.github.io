@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./MenubarMobile.module.css";
 import MenuButton from "../../assets/svg/MenuButton";
+import Logo from "../../assets/svg/Logo";
 
 const MenubarMobile = () => {
   const [currentNav, setCurrentNav] = useState("#home");
@@ -19,6 +20,7 @@ const MenubarMobile = () => {
   if (navOpen) {
     return (
       <nav className={`${styles.navi} ${styles.navOpen}`} onClick={toggleNav}>
+        <Logo className={styles.logo}></Logo>
         <a
           href="#home"
           onClick={() => setCurrentNav("#home")}
