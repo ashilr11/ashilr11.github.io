@@ -1,0 +1,65 @@
+.navi{
+  display: none;
+}
+
+.navButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navi {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: #07061a;
+    top: 0px;
+    gap: 50px;
+  }
+
+  .navi a {
+    padding: 0.9rem;
+    display: flex;
+    color: #f6f6f6;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+
+  .navButton {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .menuButton {
+    fill: white;
+  }
+}
+
+@media (max-height: 500px) {
+  .navi {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: #07061a;
+    top: 0px;
+    gap: 20px;
+  }
+}

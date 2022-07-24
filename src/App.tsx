@@ -1,16 +1,32 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import styles from "./App.module.css";
+import Timeline from "./components/timeline/Timeline";
+import Header from "./components/header/Header";
+import Menubar from "./components/menubar/Menubar";
+import MenubarMobile from "./components/menubar/MenubarMobile";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Portfolio coming soon!</p>
-      </header>
-    </div>
+    <>
+      <div id="home"></div>
+      <Menubar />
+      <MenubarMobile />
+      <Header />
+      <Timeline />
+      <Skills />
+      <Projects />
+      <Contact />
+
+      <div className={styles.copyright}>
+        <p>
+          <i>&copy; Copyright. Ashil Ramjee. 2022. All Rights Reserved.</i>
+        </p>
+      </div>
+    </>
   );
-}
+};
 
 export default App;

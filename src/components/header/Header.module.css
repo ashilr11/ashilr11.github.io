@@ -1,0 +1,159 @@
+.root{
+    width: 100%;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduce {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 72px;
+    font-weight: 200;
+    margin: 20px 0px 20px 0px;
+    font-family: PoiretOne;
+}
+
+.job {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.bodyOutline {
+    height: 300px;
+    width: 300px;
+    margin-left: -26px;
+}
+
+.bodyOutline path {
+    fill: green;
+    animation: bodyBlink 5s linear infinite;
+}
+
+.contact {
+    border-radius: 8px;
+    border: 1px solid rgb(86, 83, 103);
+    padding: 10px;
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.contact:hover {
+    border: 1px solid rgb(29, 26, 52);
+    background-color: rgb(29, 26, 52);
+}
+
+@media (max-width: 768px) {
+    .bodyContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bodyOutline {
+        width: 200px;
+        height: 200px;
+        margin-left: -26px;
+    }
+
+    .top {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .name {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .introduce {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .job {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-height: 400px) {
+    .bodyContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bodyOutline {
+        width: 200px;
+        height: 200px;
+    }
+
+    .top {
+        flex-direction: row;
+    }
+
+    .name {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .introduce {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .job {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .info {
+        width: 100%;
+    }
+}
+
+@keyframes bodyBlink {
+    0% { fill: white; }
+    25% { fill: rgb(176, 192, 234); }
+    50% { fill: rgb(110, 183, 110); }
+    75% { fill: rgb(216, 83, 83); }
+    100% { fill: white }
+}

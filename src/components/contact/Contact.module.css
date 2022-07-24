@@ -1,0 +1,175 @@
+.root{
+    width: 100%;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    padding: 0px 50px 0px 50px;
+}
+
+.content :first-child {
+    font-weight: 200;
+}
+
+.title {
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid rgb(59, 57, 71);
+    padding-top: 30px;
+}
+
+.leftColumn {
+    padding: 20px;
+    border-right: 1px solid rgb(59, 57, 71);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rightColumn {
+    padding: 20px;
+    min-width: 450px;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.formItem label{
+    margin-bottom: 20px;
+}
+
+.formItem input{
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(59, 57, 71);
+    background-color: rgb(29, 26, 52);
+    color: white;
+}
+
+.formItem textarea{
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(59, 57, 71);
+    background-color: rgb(29, 26, 52);
+    color: white;
+    line-height: 2;
+    min-height: 100px;
+}
+
+.submit{
+    border-radius: 8px;
+    border: 1px solid rgb(86, 83, 103);
+    padding: 10px;
+    color: white;
+    font-weight: 250;
+    background-color: transparent;
+}
+
+.submit:hover {
+    border: 1px solid rgb(29, 26, 52);
+    background-color: rgb(29, 26, 52);
+}
+
+.submit:disabled {
+    color: rgb(93, 93, 162)
+}
+
+.emailMe{
+    border-radius: 8px;
+    border: 1px solid rgb(86, 83, 103);
+    padding: 10px;
+    color: white;
+    font-weight: 250;
+    background-color: transparent;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.emailMe:hover {
+    border: 1px solid rgb(29, 26, 52);
+    background-color: rgb(29, 26, 52);
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: white;
+    padding-left: 10px;
+}
+
+.submitRow {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.robotRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.robotRow label{
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+.robotRow input{
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(59, 57, 71);
+    background-color: rgb(29, 26, 52);
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .root{
+        height: 100%;
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+    }
+
+    .leftColumn {
+        grid-row: 2;
+        border-right: none;
+        border-top: 1px solid rgb(59, 57, 71);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rightColumn {
+        grid-row: 1;
+        min-width: 295px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
