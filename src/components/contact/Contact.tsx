@@ -59,7 +59,7 @@ const Contact = () => {
             >
               Github
             </a>
-            <a className={styles.emailMe} href="mailto:ashilr11@gmail.com">
+            <a className={styles.links} href="mailto:ashilr11@gmail.com">
               Email Me
             </a>
           </div>
