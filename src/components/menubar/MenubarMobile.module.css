@@ -9,7 +9,7 @@
 @media (max-width: 768px) {
   .navi {
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     height: 100%;
     overflow: hidden;
