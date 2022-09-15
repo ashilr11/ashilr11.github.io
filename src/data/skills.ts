@@ -6,7 +6,7 @@ import typescript from "../assets/icons/typescript.svg";
 import html5 from "../assets/icons/html5.svg";
 import css from "../assets/icons/css3.svg";
 import sql from "../assets/icons/sql.png";
-import xml from "../assets/icons/xml.png";
+import flask from "../assets/icons/flask.png";
 import react from "../assets/icons/react.svg";
 import git from "../assets/icons/git.svg";
 import firebase from "../assets/icons/firebase.svg";
@@ -14,7 +14,7 @@ import github from "../assets/icons/github.svg";
 import bitbucket from "../assets/icons/bitbucket.svg";
 import gcloud from "../assets/icons/gcloud.svg";
 import azure from "../assets/icons/azure.svg";
-import jest from "../assets/icons/jest.png";
+import kubernetes from "../assets/icons/kubernetes.svg";
 import phaser from "../assets/icons/phaser.png";
 import turf from "../assets/icons/turf.png";
 import shapely from "../assets/icons/shapely.png";
@@ -22,6 +22,8 @@ import nodejs from "../assets/icons/nodejs.svg";
 import devOps from "../assets/icons/devops.png";
 import docker from "../assets/icons/docker.png";
 import linux from "../assets/icons/linux.png";
+import http from "../assets/icons/http.png";
+import websockets from "../assets/icons/websockets.png";
 
 export const skills = [
   {
@@ -57,8 +59,8 @@ export const skills = [
     icon: sql,
   },
   {
-    name: "XML",
-    icon: xml,
+    name: "Flask",
+    icon: flask,
   },
   {
     name: "React",
@@ -89,8 +91,8 @@ export const skills = [
     icon: azure,
   },
   {
-    name: "Jest",
-    icon: jest,
+    name: "Kubernetes",
+    icon: kubernetes,
   },
   {
     name: "Phaser 3",
@@ -119,5 +121,13 @@ export const skills = [
   {
     name: "Linux/Unix",
     icon: linux,
+  },
+  {
+    name: "HTTP",
+    icon: http,
+  },
+  {
+    name: "Websockets",
+    icon: websockets,
   },
 ];

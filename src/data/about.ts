@@ -54,6 +54,6 @@ export const experience = [
     role: "Software Engineer",
     location: "X-Line Consulting Ltd",
     description:
-      "Two continuous projects. Web development for a financial planning application – React, Typescript/JavaScript, HTML, CSS, JEST testing framework, firebase functions. Full Stack Development for a browser-based game – Python, Typescript, Docker, Phaser3 Game framework, Turf.js, and shapely geospatial libraries for polygon calculations and rendering. WebSockets for client-server communication. Remote working for both projects. Google cloud and firebase, Bitbucket, Slack, and Git for hosting, version control, communication, and CI/CD.",
+      "Two continuous projects. Web development for a financial planning application - React, Typescript/JavaScript, HTML, CSS, firebase functions. Full Stack Development for a browser-based game – Python, Typescript, Docker, Kubernetes, Phaser3 Game framework, Turf.js, and shapely geospatial libraries for polygon calculations and rendering. WebSockets for client-server communication. Remote working for both projects. Google cloud and firebase, Bitbucket, Slack, and Git for hosting, version control, communication, and CI/CD.",
   },
 ];
