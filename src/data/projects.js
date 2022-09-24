@@ -1,7 +1,7 @@
 import portfolio from "../assets/covers/portfolio.png"
 import harvester from "../assets/covers/harvester.png"
 import capstone from "../assets/covers/capstone.png"
-import restapi from "../assets/covers/restapi.png"
+import restapi from "../assets/covers/bookshelf.jpg"
 import africasteel from "../assets/covers/africasteel.png"
 
 export const projects = [
@@ -16,7 +16,7 @@ export const projects = [
         link: "https://github.com/ashilramjee/ashilramjee.github.io"
     },
     {
-        name: "OAI Harvester",
+        name: "OAI Harvester API",
         cover: harvester,
         link: "https://github.com/ashilramjee/OAIharvester"
     },
@@ -26,9 +26,8 @@ export const projects = [
         link: "https://github.com/ashilramjee/CapstoneProject"
     },
     {
-        name: "Rest API",
+        name: "Bookshelf API",
         cover: restapi,
-        link: "https://github.com/ashilramjee/zss"
+        link: "https://github.com/ashilramjee/bookshelf"
     },
-    
 ];

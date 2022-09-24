@@ -32,7 +32,7 @@ const Menubar = () => {
         onClick={() => setCurrentNav("#projects")}
         className={currentNav === "#projects" ? "active" : ""}
       >
-        Projects
+        Portfolio
       </a>
       <a
         href="#contact"

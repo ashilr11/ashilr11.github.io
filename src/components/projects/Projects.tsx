@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section id="projects" className={styles.root}>
       <div className={styles.content}>
-        <h3 className={styles.title}>Projects</h3>
+        <h3 className={styles.title}>Portfolio</h3>
 
         <ul className={styles.projects}>
           {projects.map((project, index) => {
