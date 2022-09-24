@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.712cad5c.css",
-    "main.js": "/static/js/main.1d606930.js",
+    "main.js": "/static/js/main.21842394.js",
     "static/js/787.70b4d9c2.chunk.js": "/static/js/787.70b4d9c2.chunk.js",
     "static/media/africasteel.png": "/static/media/africasteel.75abac17aa1f9d9f194e.png",
     "static/media/portfolio.png": "/static/media/portfolio.1290ceaf711696339686.png",
+    "static/media/bookshelf.jpg": "/static/media/bookshelf.11fe6eb699b5897e8bad.jpg",
     "static/media/capstone.png": "/static/media/capstone.014bb7e31dfccd323c7d.png",
     "static/media/harvester.png": "/static/media/harvester.fc0e8f4e1ca245b4d6df.png",
-    "static/media/restapi.png": "/static/media/restapi.4bcc3d56007434cf31b9.png",
     "static/media/kubernetes.svg": "/static/media/kubernetes.c570001be50fae59e298e129997dab63.svg",
     "static/media/github.svg": "/static/media/github.3cbebced6ddbbe8912feb21d03354166.svg",
     "static/media/typescript.svg": "/static/media/typescript.1bd166c69617209ba0e2764474b58b1c.svg",
@@ -26,11 +26,11 @@
     "static/media/css3.svg": "/static/media/css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html5.svg": "/static/media/html5.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "main.712cad5c.css.map": "/static/css/main.712cad5c.css.map",
-    "main.1d606930.js.map": "/static/js/main.1d606930.js.map",
+    "main.21842394.js.map": "/static/js/main.21842394.js.map",
     "787.70b4d9c2.chunk.js.map": "/static/js/787.70b4d9c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.712cad5c.css",
-    "static/js/main.1d606930.js"
+    "static/js/main.21842394.js"
   ]
 }
