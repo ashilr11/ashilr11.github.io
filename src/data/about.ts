@@ -45,15 +45,20 @@ export const experience = [
     dateRange: "2018 - 2020",
     role: "System Analyst / Software Developer",
     location: "University Experience",
-    description:
-      "Worked with industry professionals for course projects to either create information systems or improve them. Helped to create the first Centralized Cultural Heritage Web Portal Prototype in South Africa for an Honours Final project. Built the metadata harvester component for the portal.",
+    description: "Please contact me for in-depth info or for my resume, thanks",
   },
   {
     id: 1,
+    dateRange: "Sept 2022",
+    role: "Software Developer",
+    location: "Freelance",
+    description: "Please contact me for in-depth info or for my resume, thanks",
+  },
+  {
+    id: 2,
     dateRange: "2021 - Now",
     role: "Software Engineer",
     location: "X-Line Consulting Ltd",
-    description:
-      "Two continuous projects. Web development for a financial planning application - React, Typescript/JavaScript, HTML, CSS, firebase functions. Full Stack Development for a browser-based game – Python, Typescript, Docker, Kubernetes, Phaser3 Game framework, Turf.js, and shapely geospatial libraries for polygon calculations and rendering. WebSockets for client-server communication. Remote working for both projects. Google cloud and firebase, Bitbucket, Slack, and Git for hosting, version control, communication, and CI/CD.",
+    description: "Please contact me for in-depth info or for my resume, thanks",
   },
 ];

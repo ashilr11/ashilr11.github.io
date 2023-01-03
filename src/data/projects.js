@@ -4,6 +4,7 @@ import capstone from "../assets/covers/capstone.png"
 import restapi from "../assets/covers/bookshelf.jpg"
 import africasteel from "../assets/covers/africasteel.png"
 import timer from "../assets/covers/timer.png"
+import thinkLess from "../assets/covers/thinkLess.png"
 
 export const projects = [
     {
@@ -35,5 +36,10 @@ export const projects = [
         name: "Timer",
         cover: timer,
         link: "https://ashilramjee.com/timer"
+    },
+    {
+        name: "Think Less",
+        cover: thinkLess,
+        link: "https://github.com/ashilramjee/ThinkLess"
     },
 ];
