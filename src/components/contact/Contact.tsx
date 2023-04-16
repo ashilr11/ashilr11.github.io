@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Contact.module.css";
 import emailjs from "@emailjs/browser";
 import Logo from "../../assets/svg/Logo";
+import "animate.css";
 
 const Contact = () => {
   const form = React.useRef() as any;
@@ -38,7 +39,7 @@ const Contact = () => {
     }
   };
   return (
-    <section id="contact" className={styles.root}>
+    <section id="contact" className={`${styles.root}`}>
       <div className={styles.content}>
         <h3 className={styles.title}>Contact Me</h3>
 

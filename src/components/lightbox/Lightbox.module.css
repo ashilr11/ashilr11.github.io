@@ -1,0 +1,88 @@
+.fullscreen {
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.80); */
+    background-image: url('../../assets/gifs/waves.gif');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #07061a;
+    border-radius: 18px;
+    padding: 16px 24px;
+    text-align: center;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+    overflow: scroll;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.widthContraint {
+    max-width: 340px;
+}
+
+.container {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.closeButton {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.previous{
+    margin-right: 20px;
+}
+
+.next{
+    margin-left: 20px;
+}
+
+.title{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: var(--gray-dark-hard);
+}
+
+@media (max-width: 768px){
+    .container {
+        max-width: 320px;
+    }
+}

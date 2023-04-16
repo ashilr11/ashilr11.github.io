@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { projects } from "../../data/projects";
 import styles from "./Projects.module.css";
+import Lightbox from "../lightbox/Lightbox";
+import ProjectContent from "./ProjectContent";
 
 const Projects = () => {
+  const [showAfricaSteel, setShowAfricaSteel] = useState(false);
+  const [showPortfolio, setShowPortfolio] = useState(false);
+  const [showHarvester, setShowHarvester] = useState(false);
+  const [showPneumo, setShowPneumo] = useState(false);
+  const [showBookshelf, setShowBookshelf] = useState(false);
+  const [showTimer, setShowTimer] = useState(false);
+  const [showThinkLess, setShowThinkLess] = useState(false);
+
+  const setState = (show: boolean, index: number) => {
+    switch (index) {
+      case 0:
+        setShowAfricaSteel(show);
+        break;
+      case 1:
+        setShowPortfolio(show);
+        break;
+      case 2:
+        setShowHarvester(show);
+        break;
+      case 3:
+        setShowPneumo(show);
+        break;
+      case 4:
+        setShowBookshelf(show);
+        break;
+      case 5:
+        setShowTimer(show);
+        break;
+      case 6:
+        setShowThinkLess(show);
+        break;
+    }
+  };
   return (
     <section id="projects" className={styles.root}>
       <div className={styles.content}>
@@ -12,11 +47,9 @@ const Projects = () => {
           {projects.map((project, index) => {
             return (
               <li className={styles.listItem} key={"skills" + index}>
-                <a
+                <button
                   className={styles.project}
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
+                  onClick={() => setState(true, index)}
                 >
                   <img
                     className={styles.cover}
@@ -24,11 +57,102 @@ const Projects = () => {
                     alt="Cover"
                   />
                   <span className={styles.name}>{project.name}</span>
-                </a>
+                </button>
               </li>
             );
           })}
         </ul>
+
+        {showAfricaSteel && (
+          <Lightbox
+            content={[
+              {
+                body: <ProjectContent project={projects[0]} />,
+              },
+            ]}
+            step={1}
+            onClose={() => setShowAfricaSteel(!showAfricaSteel)}
+            widthConstraint={false}
+          />
+        )}
+
+        {showPortfolio && (
+          <Lightbox
+            content={[
+              {
+                body: <ProjectContent project={projects[1]} />,
+              },
+            ]}
+            step={1}
+            onClose={() => setShowPortfolio(!showPortfolio)}
+            widthConstraint={false}
+          />
+        )}
+
+        {showHarvester && (
+          <Lightbox
+            content={[
+              {
+                body: <ProjectContent project={projects[2]} />,
+              },
+            ]}
+            step={1}
+            onClose={() => setShowHarvester(!showHarvester)}
+            widthConstraint={false}
+          />
+        )}
+
+        {showPneumo && (
+          <Lightbox
+            content={[
+              {
+                body: <ProjectContent project={projects[3]} />,
+              },
+            ]}
+            step={1}
+            onClose={() => setShowPneumo(!showPneumo)}
+            widthConstraint={false}
+          />
+        )}
+
+        {showBookshelf && (
+          <Lightbox
+            content={[
+              {
+                body: <ProjectContent project={projects[4]} />,
+              },
+            ]}
+            step={1}
+            onClose={() => setShowBookshelf(!showBookshelf)}
+            widthConstraint={false}
+          />
+        )}
+
+        {showTimer && (
+          <Lightbox
+            content={[
+              {
+                body: <ProjectContent project={projects[5]} />,
+              },
+            ]}
+            step={1}
+            onClose={() => setShowTimer(!showTimer)}
+            widthConstraint={false}
+          />
+        )}
+
+        {showThinkLess && (
+          <Lightbox
+            content={[
+              {
+                body: <ProjectContent project={projects[6]} />,
+              },
+            ]}
+            step={1}
+            onClose={() => setShowThinkLess(!showThinkLess)}
+            widthConstraint={false}
+          />
+        )}
       </div>
     </section>
   );

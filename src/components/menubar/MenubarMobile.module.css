@@ -10,7 +10,7 @@
   .navi {
     display: flex;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     height: 100%;
     overflow: hidden;
     flex-direction: column;

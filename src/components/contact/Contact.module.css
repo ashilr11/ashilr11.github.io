@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: rgba(0,0,0,0.2);
 }
 
 .content {
@@ -160,16 +161,10 @@
     gap: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
     .logo {
         width: 100px;
         height: 100px;
-    }
-}
-
-@media (max-width: 768px) {
-    .root{
-        height: 100%;
     }
 
     .info{
@@ -188,6 +183,12 @@
     .rightColumn {
         grid-row: 1;
         min-width: 295px;
+    }
+}
+
+@media (max-width: 768px) {
+    .root{
+        height: 100%;
     }
 
     .content {

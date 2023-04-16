@@ -10,8 +10,7 @@ import Contact from "./components/contact/Contact";
 
 const App = () => {
   return (
-    <>
-      <div id="home"></div>
+    <div className={styles.root} id="home">
       <Menubar />
       <MenubarMobile />
       <Header />
@@ -19,13 +18,12 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
-
       <div className={styles.copyright}>
         <p>
           <i>&copy; Copyright. Ashil Ramjee. 2022. All Rights Reserved.</i>
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

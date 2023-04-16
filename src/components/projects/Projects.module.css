@@ -42,6 +42,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-color: transparent;
+    border: none;
 }
 
 .listItem {
@@ -58,8 +60,7 @@
     margin-top: 10px;
 }
 
-@media (max-width: 1080px) {
-
+@media (max-width: 1280px) {
     .content {
         padding: 20px;
     }
@@ -70,7 +71,6 @@
 }
 
 @media (max-width: 900px) {
-
     .content {
         padding: 20px;
     }

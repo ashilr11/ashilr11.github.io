@@ -1,16 +1,19 @@
 import React from "react";
 import BodyOutline from "../../assets/svg/BodyOutline";
 import styles from "./Header.module.css";
+import "animate.css";
 
 const Header = () => {
   return (
     <section className={styles.root}>
       <div className={styles.content}>
         <div className={styles.top}>
-          <div className={styles.bodyContainer}>
+          <div
+            className={`${styles.bodyContainer} animate__animated animate__pulse`}
+          >
             <BodyOutline className={styles.bodyOutline} />
           </div>
-          <div className={styles.info}>
+          <div className={`${styles.info} animate__animated animate__pulse`}>
             <p className={styles.introduce}>
               Hi there &#128075; &nbsp; My name is
             </p>
@@ -20,7 +23,7 @@ const Header = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <a href="#contact" className={styles.contact}>
+          <a href="#contact" className={`${styles.contact}`}>
             Contact Me
           </a>
         </div>

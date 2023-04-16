@@ -1,0 +1,76 @@
+.root {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+}
+
+.root img {
+    max-width: 600px;
+    width: 100%;
+}
+
+.root h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: PoiretOne;
+}
+
+.root h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: PoiretOne;
+}
+
+.root p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.root ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    list-style: circle;
+}
+
+.root ul li{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 200;
+    border-radius: 8px;
+    color: #ffffff;
+    border: 1px solid rgb(86, 83, 103);
+    font-size: 14px;
+}
+
+.buttons a:hover {
+    border: 1px solid rgb(29, 26, 52);
+    background-color: rgb(29, 26, 52);
+}
+
+@media (max-width: 992px) {
+    .root ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .root ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
