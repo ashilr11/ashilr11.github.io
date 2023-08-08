@@ -24,10 +24,10 @@ const Contact = () => {
     if (!isRobot) {
       setSending(true);
       await emailjs.sendForm(
-        "service_rrsg36n",
-        "template_th7pc28",
+        import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
         form.current,
-        "SrZ_7DPGVY9aJr8Kd"
+        import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
       );
       setSending(false);
       setIsRobot(true);

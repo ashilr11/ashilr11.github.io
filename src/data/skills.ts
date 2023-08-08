@@ -25,7 +25,7 @@ import linux from "../assets/icons/linux.png";
 import http from "../assets/icons/http.png";
 import websockets from "../assets/icons/websockets.png";
 import swift from "../assets/icons/swift.svg";
-import chatGPT from "../assets/icons/chatgpt.svg";
+import vite from "../assets/icons/vite.svg";
 
 export const skills = [
   {
@@ -145,7 +145,7 @@ export const skills = [
     icon: cSharp,
   },
   {
-    name: "ChatGPT",
-    icon: chatGPT,
+    name: "Vite",
+    icon: vite,
   },
 ];

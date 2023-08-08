@@ -37,6 +37,13 @@ export const education = [
     location: "Zimbabwe",
     description: "Credential ID: 993518923",
   },
+  {
+    id: 5,
+    dateRange: "2023",
+    name: "AWS: Cloud practitioner",
+    location: "Zimbabwe",
+    description: "Credential ID: 9F80PPD241QQ1BKQ",
+  },
 ];
 
 export const experience = [
@@ -47,15 +54,15 @@ export const experience = [
     location: "University Experience",
     description: "Please contact me for in-depth info or for my resume, thanks",
   },
+  // {
+  //   id: 1,
+  //   dateRange: "Sept 2022",
+  //   role: "Software Developer",
+  //   location: "Freelance",
+  //   description: "Please contact me for in-depth info or for my resume, thanks",
+  // },
   {
     id: 1,
-    dateRange: "Sept 2022",
-    role: "Software Developer",
-    location: "Freelance",
-    description: "Please contact me for in-depth info or for my resume, thanks",
-  },
-  {
-    id: 2,
     dateRange: "2021 - Now",
     role: "Software Engineer",
     location: "X-Line Consulting Ltd",

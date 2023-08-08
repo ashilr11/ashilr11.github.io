@@ -5,6 +5,7 @@ import restapi from "../assets/covers/bookshelf.jpg";
 import africasteel from "../assets/covers/africasteel.png";
 import timer from "../assets/covers/timer.png";
 import thinkLess from "../assets/covers/thinkLess.png";
+import frameco from "../assets/covers/frameco.png";
 
 export const projects = [
   {
@@ -20,9 +21,28 @@ export const projects = [
       "email.js",
       "HTML",
       "CSS",
+      "Vite",
     ],
     description:
       "Built a company website for a multi-million dollar company. The company has a range of steel products. Added contact forms, setup email templates, and configured their domain on cPanel.",
+  },
+  {
+    name: "Frameco",
+    cover: frameco,
+    link: "https://frameco.ashilramjee.com/",
+    technologies: [
+      "React",
+      "Node.js",
+      "Typescript",
+      "JavaScript",
+      "pnpm",
+      "email.js",
+      "HTML",
+      "CSS",
+      "Vite",
+    ],
+    description:
+      "Build a website for a company that specialises in producing and selling aluminium roof trusses.",
   },
   {
     name: "Personal Portfolio",
@@ -37,6 +57,7 @@ export const projects = [
       "email.js",
       "HTML",
       "CSS",
+      "Vite",
     ],
     description:
       "Built a simple personal portfolio website for ease of access of information for potential stakeholders.",

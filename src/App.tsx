@@ -20,7 +20,10 @@ const App = () => {
       <Contact />
       <div className={styles.copyright}>
         <p>
-          <i>&copy; Copyright. Ashil Ramjee. 2022. All Rights Reserved.</i>
+          <i>
+            &copy; Copyright. Ashil Ramjee. {new Date().getFullYear()}. All
+            Rights Reserved.
+          </i>
         </p>
       </div>
     </div>
