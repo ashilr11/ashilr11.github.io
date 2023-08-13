@@ -12,6 +12,7 @@ const Projects = () => {
   const [showBookshelf, setShowBookshelf] = useState(false);
   const [showTimer, setShowTimer] = useState(false);
   const [showThinkLess, setShowThinkLess] = useState(false);
+  const [showFrameco, setShowFrameco] = useState(false);
 
   const setState = (show: boolean, index: number) => {
     switch (index) {
@@ -19,21 +20,24 @@ const Projects = () => {
         setShowAfricaSteel(show);
         break;
       case 1:
-        setShowPortfolio(show);
+        setShowFrameco(show);
         break;
       case 2:
-        setShowHarvester(show);
+        setShowPortfolio(show);
         break;
       case 3:
-        setShowPneumo(show);
+        setShowHarvester(show);
         break;
       case 4:
-        setShowBookshelf(show);
+        setShowPneumo(show);
         break;
       case 5:
-        setShowTimer(show);
+        setShowBookshelf(show);
         break;
       case 6:
+        setShowTimer(show);
+        break;
+      case 7:
         setShowThinkLess(show);
         break;
     }
@@ -76,11 +80,24 @@ const Projects = () => {
           />
         )}
 
-        {showPortfolio && (
+        {showFrameco && (
           <Lightbox
             content={[
               {
                 body: <ProjectContent project={projects[1]} />,
+              },
+            ]}
+            step={1}
+            onClose={() => setShowFrameco(!showFrameco)}
+            widthConstraint={false}
+          />
+        )}
+
+        {showPortfolio && (
+          <Lightbox
+            content={[
+              {
+                body: <ProjectContent project={projects[2]} />,
               },
             ]}
             step={1}
@@ -93,7 +110,7 @@ const Projects = () => {
           <Lightbox
             content={[
               {
-                body: <ProjectContent project={projects[2]} />,
+                body: <ProjectContent project={projects[3]} />,
               },
             ]}
             step={1}
@@ -106,7 +123,7 @@ const Projects = () => {
           <Lightbox
             content={[
               {
-                body: <ProjectContent project={projects[3]} />,
+                body: <ProjectContent project={projects[4]} />,
               },
             ]}
             step={1}
@@ -119,7 +136,7 @@ const Projects = () => {
           <Lightbox
             content={[
               {
-                body: <ProjectContent project={projects[4]} />,
+                body: <ProjectContent project={projects[5]} />,
               },
             ]}
             step={1}
@@ -132,7 +149,7 @@ const Projects = () => {
           <Lightbox
             content={[
               {
-                body: <ProjectContent project={projects[5]} />,
+                body: <ProjectContent project={projects[6]} />,
               },
             ]}
             step={1}
@@ -145,7 +162,7 @@ const Projects = () => {
           <Lightbox
             content={[
               {
-                body: <ProjectContent project={projects[6]} />,
+                body: <ProjectContent project={projects[7]} />,
               },
             ]}
             step={1}

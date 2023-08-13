@@ -29,7 +29,7 @@ export const projects = [
   {
     name: "Frameco",
     cover: frameco,
-    link: "https://frameco.ashilramjee.com/",
+    link: "https://frameco.co.zw",
     technologies: [
       "React",
       "Node.js",
