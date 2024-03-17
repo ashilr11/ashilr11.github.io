@@ -2,10 +2,11 @@ import portfolio from "../assets/covers/portfolio.png";
 import harvester from "../assets/covers/harvester.jpg";
 import capstone from "../assets/covers/capstone.png";
 import restapi from "../assets/covers/bookshelf.jpg";
-import africasteel from "../assets/covers/africasteel.png";
+import africasteel from "../assets/covers/africasteel.webp";
 import timer from "../assets/covers/timer.png";
 import thinkLess from "../assets/covers/thinkLess.png";
 import frameco from "../assets/covers/frameco.png";
+import timelink from "../assets/covers/timelink.png";
 
 export const projects = [
   {
@@ -17,7 +18,7 @@ export const projects = [
       "Node.js",
       "Typescript",
       "JavaScript",
-      "npm",
+      "pnpm",
       "email.js",
       "HTML",
       "CSS",
@@ -111,5 +112,24 @@ export const projects = [
     technologies: ["Swift", "MacOs"],
     description:
       "Built a MacOS menu bar app that you can use to control the locking and unlocking of keys. It can be used to lock the keyboard and any given time which blocks user keyboard input.",
+  },
+  {
+    name: "Timelink Systems",
+    cover: timelink,
+    link: "https://timelink.co.zw",
+    technologies: [
+      "React",
+      "Node.js",
+      "Typescript",
+      "JavaScript",
+      "pnpm",
+      "email.js",
+      "HTML",
+      "CSS",
+      "Vite",
+      "Framer Motion",
+    ],
+    description:
+      "Built a website for Timelink Systems, an established company which supplies cutting edge solutions and technology.",
   },
 ];

@@ -13,6 +13,7 @@ const Projects = () => {
   const [showTimer, setShowTimer] = useState(false);
   const [showThinkLess, setShowThinkLess] = useState(false);
   const [showFrameco, setShowFrameco] = useState(false);
+  const [showTimelink, setShowTimelink] = useState(false);
 
   const setState = (show: boolean, index: number) => {
     switch (index) {
@@ -39,6 +40,9 @@ const Projects = () => {
         break;
       case 7:
         setShowThinkLess(show);
+        break;
+      case 8:
+        setShowTimelink(show);
         break;
     }
   };
@@ -167,6 +171,19 @@ const Projects = () => {
             ]}
             step={1}
             onClose={() => setShowThinkLess(!showThinkLess)}
+            widthConstraint={false}
+          />
+        )}
+
+        {showTimelink && (
+          <Lightbox
+            content={[
+              {
+                body: <ProjectContent project={projects[8]} />,
+              },
+            ]}
+            step={1}
+            onClose={() => setShowTimelink(!showTimelink)}
             widthConstraint={false}
           />
         )}

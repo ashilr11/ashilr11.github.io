@@ -24,8 +24,9 @@ import docker from "../assets/icons/docker.png";
 import linux from "../assets/icons/linux.png";
 import http from "../assets/icons/http.png";
 import websockets from "../assets/icons/websockets.png";
-import swift from "../assets/icons/swift.svg";
+import prisma from "../assets/icons/prisma.svg";
 import vite from "../assets/icons/vite.svg";
+import connection from "../assets/icons/connection.svg";
 
 export const skills = [
   {
@@ -113,6 +114,10 @@ export const skills = [
     icon: nodejs,
   },
   {
+    name: "Express.js",
+    icon: javascript,
+  },
+  {
     name: "DevOps",
     icon: devOps,
   },
@@ -133,8 +138,8 @@ export const skills = [
     icon: websockets,
   },
   {
-    name: "Swift",
-    icon: swift,
+    name: "PostgreSQL",
+    icon: sql,
   },
   {
     name: "Blazor",
@@ -147,5 +152,13 @@ export const skills = [
   {
     name: "Vite",
     icon: vite,
+  },
+  {
+    name: "Prisma",
+    icon: prisma,
+  },
+  {
+    name: "Full Stack",
+    icon: connection,
   },
 ];
