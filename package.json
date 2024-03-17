@@ -20,7 +20,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && cd build && cp index.html 404.html && cd .. && cp .env dist/.env",
+    "build": "tsc && vite build && cd dist && cp index.html 404.html && cd .. && cp .env dist/.env",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
