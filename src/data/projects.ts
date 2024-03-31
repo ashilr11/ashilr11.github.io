@@ -43,7 +43,7 @@ export const projects = [
       "Vite",
     ],
     description:
-      "Build a website for a company that specialises in producing and selling aluminium roof trusses.",
+      "Built a website for a company that specialises in producing and selling aluminium roof trusses.",
   },
   {
     name: "Personal Portfolio",
@@ -70,7 +70,7 @@ export const projects = [
     github: "https://github.com/ashilramjee/ashilramjee.github.io",
     technologies: ["Python", "XML", "OAI protocol", "XSL"],
     description:
-      "Built one of three components for the First Cultural Heritage Centralised Prototypes in South Africa. This compromised of the harvester component which takes in data, converts and exposes it",
+      "Built one of three components for the First Cultural Heritage Centralised Prototypes in South Africa. This compromised of the harvester component which takes in data, converts and exposes it.",
   },
   {
     name: "PneumoVis",
@@ -86,7 +86,7 @@ export const projects = [
     github: "https://github.com/ashilramjee/ashilramjee.github.io",
     technologies: ["Java", "Springboot", "Maven"],
     description:
-      "Build a RestFul API that can be used to control a digital bookshelf",
+      "Built a RestFul API that can be used to control a digital bookshelf",
   },
   {
     name: "Timer",
@@ -108,10 +108,10 @@ export const projects = [
   {
     name: "ThinkLess",
     cover: thinkLess,
-    github: "https://github.com/ashilramjee/ashilramjee.github.io",
+    github: "https://github.com/ashilramjee/ThinkLess",
     technologies: ["Swift", "MacOs"],
     description:
-      "Built a MacOS menu bar app that you can use to control the locking and unlocking of keys. It can be used to lock the keyboard and any given time which blocks user keyboard input.",
+      "Built a MacOS menu bar app that you can use to control the locking and unlocking of keys. It can be used to lock the keyboard at any given time which blocks user keyboard input.",
   },
   {
     name: "Timelink Systems",
